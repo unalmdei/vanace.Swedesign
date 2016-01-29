@@ -1,0 +1,93 @@
+@font-face {
+  font-family:PTSans_Narrow;
+  src:url(./font/pt-sans-narrow.ttf);
+}
+@font-face {
+  font-family:Michroma;
+  src:url(./font/Michroma.ttf);
+}
+@font-face {
+  font-family:Patron_Medium;
+  src:url(./font/Patron-Medium.ttf);
+}
+@font-face {
+  font-family:GeosansLight;
+  src:url(./font/GeosansLight.ttf);
+}
+
+html, body {
+  font-family:PTSans_Narrow;
+  font-size:16pt;
+  line-height:150%;
+  text-align:justify;
+  background-color:#333;
+  height:100%;
+  overflow:hidden;
+}
+.box {
+  width:80%;
+  margin:10% 10%;
+  border:solid 1px #999;
+  color:#ccc;
+  display:inline-block;
+  position:relative;
+}
+.box:after {
+  padding-top:52%;
+  display:block;
+  content:'';
+}
+.canvas {
+  position:absolute;
+  top:0;
+  bottom:0;
+  right:0;
+  left:0;
+}
+
+#intro .subtitle {
+  letter-spacing:0.3em;
+  text-align:center;
+  font-size:1.1em;
+}
+.artigo {
+  font-family:Michroma;
+  font-size:1.3em;
+}
+.upofloor {
+  font-family:Patron_Medium;
+  font-size:2.8em;
+  text-decoration:underline;
+  color:#fff;
+}
+.doclink {
+  margin:0.7em 1em 0.7em 1em;
+}
+
+a {
+  color:#ccc;
+  text-decoration:inherit;
+}
+a, img {
+    border:none;
+    outline:none
+}
+.button {
+  opacity:0.0;
+  cursor:pointer;
+  cursor:hand;
+}
+.button:hover {
+  opacity:1.0;
+}
+
+@keyframes button_move {
+  from { left:6%;}
+}
+#downloads .button_animated {
+  animation:button_move 0.5s;
+}
+
+#about, #downloads {
+  display:none;
+}
